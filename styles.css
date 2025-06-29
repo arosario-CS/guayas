@@ -265,3 +265,30 @@ header h1 {
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hours-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .hours-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+
+  .hours-table td {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem 0;
+  }
+
+  .hours-section h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
