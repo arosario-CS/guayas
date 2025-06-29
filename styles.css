@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-  background-color: #1b1b1b; /* Dark, modern base */
-  color: #eee;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff8dc; /* Light warm yellow */
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  color: #222;
 }
 
-/* Header with flag */
+/* Header */
 header {
   background: linear-gradient(to right, #fcd116, #003893, #ce1126);
   color: white;
@@ -33,15 +33,57 @@ header h1 {
   margin-top: 1.5rem;
 }
 
+/* Filter Nav */
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem auto 1.5rem;
+  padding: 0 1rem;
+}
+
+.filter-nav button {
+  background-color: transparent;
+  border: 2px solid #003893;
+  color: #003893;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.filter-nav button:hover {
+  background-color: #fcd116;
+  border-color: #fcd116;
+  color: #222;
+}
+
+.filter-nav button.active {
+  background-color: #ce1126;
+  border-color: #ce1126;
+  color: white;
+}
+
 /* Hours Section */
 .hours-section {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #fff9e5;
   color: #222;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 900px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hours-wrapper {
   text-align: center;
 }
 
@@ -55,6 +97,7 @@ header h1 {
   margin: 0 auto;
   border-collapse: collapse;
   font-size: 1rem;
+  text-align: center;
 }
 
 .hours-table td {
@@ -62,33 +105,27 @@ header h1 {
   border-bottom: 1px solid #ccc;
 }
 
-.hours-table tr:last-child td {
-  border-bottom: none;
-}
-
-.hours-table td:first-child {
-  font-weight: bold;
-  color: #ce1126;
-}
-
-/* Menu Section Wrapper */
+/* Menu Section */
 .menu-section {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: #fff9e5;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
   color: #222;
-  position: relative;
 }
 
-/* Ecuadorian flag stripe */
 .menu-section::before {
-  content: '';
+  content: "";
   display: block;
   height: 5px;
-  background: linear-gradient(to right, #fcd116 33.3%, #003893 33.3% 66.6%, #ce1126 66.6%);
+  background: linear-gradient(
+    to right,
+    #fcd116 33.3%,
+    #003893 33.3% 66.6%,
+    #ce1126 66.6%
+  );
   margin-bottom: 1rem;
   border-radius: 3px;
 }
@@ -98,12 +135,12 @@ header h1 {
   color: #003893;
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid #fcd116;
+  border-bottom: 3px solid #ce1126;
   display: inline-block;
   padding-bottom: 0.3rem;
 }
 
-/* Dish container grid */
+/* Dish Cards */
 .menu-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -111,13 +148,12 @@ header h1 {
   padding: 1rem 0;
 }
 
-/* Individual dish card */
 .dish-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: #fef6dd;
+  border: 1px solid #fcd116;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -135,8 +171,7 @@ header h1 {
   padding: 1rem;
 }
 
-.dish-info h2,
-.dish-info h3 {
+.dish-info h2 {
   color: #003893;
   margin-bottom: 0.5rem;
 }
@@ -148,5 +183,30 @@ header h1 {
 
 .price {
   font-weight: bold;
+  color: #ce1126;
+}
+
+.contact-section {
+  background-color: #fcd116;
+  color: #003893;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  border-top: 4px solid #ce1126;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section a {
+  color: #003893;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contact-section a:hover {
   color: #ce1126;
 }
