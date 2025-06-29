@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="top-nav">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg" alt="Guayas Logo" class="nav-logo-img" />
+        </a>
+        
+      </div>
+      <div class="nav-right">
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+
     <header>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"
-        alt="Ecuador Flag"
-        class="flag-banner"
-      />
+      
       <h1>Guayas</h1>
     </header>
 
@@ -26,21 +34,27 @@
     </nav>
 
     <main>
-      <section class="hours-section">
+      <section id="hours" class="hours-section">
         <h2>Hours of Operation:</h2>
         <table class="hours-table">
           <tr>
             <td>Saturday</td>
-            <td>11:00 AM – 1:00 PM</td>
-            <td>3:00 PM – 8:00 PM</td>
+            <td>
+              <div>11:00 AM – 1:00 PM</div>
+              <div>3:00 PM – 8:00 PM</div>
+            </td>
           </tr>
+          
           <tr>
             <td>Sunday</td>
-            <td>11:00 AM – 1:00 PM</td>
-            <td>3:00 PM – 8:00 PM</td>
+            <td>
+              <div>11:00 AM – 1:00 PM</div>
+              <div>3:00 PM – 8:00 PM</div>
+            </td>
           </tr>
         </table>
       </section>
+      
 
       <!-- Menu Sections with data-category attributes -->
 
@@ -309,8 +323,29 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <h2>📞 Contact Us</h2>
+      
+        <div class="hours-subsection">
+          <h3>Hours of Operation</h3>
+          <table class="hours-table">
+            <tr>
+              <td>Saturday</td>
+              <td>
+                <div>11:00 AM – 1:00 PM</div>
+                <div>3:00 PM – 8:00 PM</div>
+              </td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>
+                <div>11:00 AM – 1:00 PM</div>
+                <div>3:00 PM – 8:00 PM</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      
         <p>
           Ready to place an order or have questions? Give us a call or reach out
           on Facebook!
@@ -326,6 +361,7 @@
           >
         </p>
       </section>
+      
     </main>
 
     <script>
@@ -350,5 +386,5 @@
         });
       });
     </script>
-  </body>
+  
 </html>

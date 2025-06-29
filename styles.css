@@ -190,10 +190,14 @@ header h1 {
   background-color: #fff5d1;
   color: #003893;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem; /* Reduced from 4rem to 3rem */
   margin-top: 2rem;
   font-size: 1.1rem;
   border-top: 4px solid #ce1126;
+  min-height: 45vh; /* Reduced from 60vh to 45vh */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-section h2 {
@@ -264,26 +268,67 @@ header h1 {
   .contact-section h2 {
     font-size: 1.6rem;
   }
+
+  .nav-logo-img {
+    height: 32px;
+    margin-top: 4px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top Nav Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #fcd116, #003893, #ce1126);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left .nav-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0033a0;
+  text-decoration: none;
+}
+
+.nav-right a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #d32f2f;
 }
 
 @media (max-width: 768px) {
   .hours-table {
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     border-collapse: collapse;
   }
 
   .hours-table tr {
-    display: block;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
+    display: table-row;
   }
 
   .hours-table td {
-    display: block;
+    display: table-cell;
+    font-size: 0.95rem;
+    padding: 0.5rem;
     text-align: center;
-    font-size: 1rem;
-    padding: 0.3rem 0;
+    border-bottom: 1px solid #ccc;
   }
 
   .hours-section h2 {
@@ -291,4 +336,53 @@ header h1 {
     text-align: center;
     margin-bottom: 1rem;
   }
+}
+
+.hours-table td div {
+  margin: 0.2rem 0;
+}
+
+.nav-left .nav-logo,
+.nav-right a {
+  color: white;
+}
+
+.nav-right a:hover {
+  color: #fcd116;
+}
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.contact-section .hours-subsection {
+  margin-bottom: 2rem;
+}
+
+.contact-section .hours-subsection h3 {
+  color: #003893;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .hours-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-section .hours-table td {
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-section .hours-table td div {
+  margin: 0.2rem 0;
+}
+
+.contact-section p {
+  margin-bottom: 0.75rem;
 }
