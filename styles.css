@@ -210,3 +210,58 @@ header h1 {
 .contact-section a:hover {
   color: #ce1126;
 }
+
+/* Mobile-Friendly Enhancements */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .flag-banner {
+    width: 60px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .filter-nav {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .filter-nav button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .menu-section {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .menu-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .dish-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .dish-info p {
+    font-size: 0.85rem;
+  }
+
+  .hours-section {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .contact-section {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
+}
