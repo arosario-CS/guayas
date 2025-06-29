@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecuadorian Food Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"
+        alt="Ecuador Flag"
+        class="flag-banner"
+      />
+      <h1>Guayas</h1>
+    </header>
+
+    <!-- Filter Navigation -->
+    <nav class="filter-nav">
+      <button data-category="all" class="active">All</button>
+      <button data-category="Entrées">Entrées</button>
+      <button data-category="Sides">Sides</button>
+      <button data-category="Drinks">Drinks</button>
+      <button data-category="Desserts">Desserts</button>
+    </nav>
+
+    <main>
+      <section class="hours-section">
+        <div class="hours-wrapper">
+          <h2>Hours of Operation</h2>
+          <table class="hours-table">
+            <tr>
+              <td>Friday</td>
+              <td>11:00 AM – 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>12:00 PM – 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>11:00 AM – 10:00 PM</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Menu Sections with data-category attributes -->
+
+      <section class="menu-section" data-category="Entrées">
+        <h2>Entrées</h2>
+        <div class="menu-container">
+          <div class="dish-card">
+            <img src="/images/encebollado.jfif" alt="Ecuadorian Ceviche" />
+            <div class="dish-info">
+              <h2>Encebollado</h2>
+              <p>
+                A hearty and flavorful soup made with fish, yuca (cassava),
+                tomatoes, onions, cilantro, and various spices
+              </p>
+              <span class="price">$14.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/images.jfif" alt="Llapingachos" />
+            <div class="dish-info">
+              <h2>Encebollado Mixto</h2>
+              <p>Encebollado but more</p>
+              <span class="price">$17.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/chaulafan.webp" alt="Llapingachos" />
+            <div class="dish-info">
+              <h2>Chaulafan</h2>
+              <p>Ecuadorian version of fried rice</p>
+              <span class="price">$20.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/bandera.jpg" alt="Bandera" />
+            <div class="dish-info">
+              <h2>Bandera</h2>
+              <p>idk</p>
+              <span class="price">$22.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download.jfif" alt="Guatita" />
+            <div class="dish-info">
+              <h2>Guatita</h2>
+              <p>
+                It's a stew centered around tripe (cow stomach), known locally
+                as "guatitas," stewed in a rich, creamy, and flavorful
+                peanut-based sauce.
+              </p>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (1).jfif" alt="Seco de Chivo" />
+            <div class="dish-info">
+              <h2>Seco de Chivo</h2>
+              <p>
+                Seco de chivo is a traditional Ecuadorian goat stew, often
+                served on special occasions. It is a hearty dish with a robust,
+                aromatic flavor.
+              </p>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (2).jfif" alt="Seco de gallina" />
+            <div class="dish-info">
+              <h2>Seco de gallina</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (3).jfif" alt="Yapingacho" />
+            <div class="dish-info">
+              <h2>Yapingacho</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$16.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (4).jfif" alt="Ceviche de camarón" />
+            <div class="dish-info">
+              <h2>Ceviche de camarón</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$20.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img
+              src="/images/download (5).jfif"
+              alt="Arroz con menestra y tortilla de camarón o carne asada o pescado frito"
+            />
+            <div class="dish-info">
+              <h2>
+                Arroz con menestra y tortilla de camarón o carne asada o pescado
+                frito
+              </h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$18.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (6).jfif" alt="Sango de pescado" />
+            <div class="dish-info">
+              <h2>Sango de pescado</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (7).jfif" alt="Sango de camarón" />
+            <div class="dish-info">
+              <h2>Sango de camarón</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$15.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (8).jfif" alt="Sango Mixto" />
+            <div class="dish-info">
+              <h2>Sango Mixto</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$18.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" data-category="Sides">
+        <h2>Sides</h2>
+        <div class="menu-container">
+          <div class="dish-card">
+            <img src="/images/download (9).jfif" alt="Chifles" />
+            <div class="dish-info">
+              <h2>Chifles</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$2.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/download (10).jfif" alt="Maíz tostado">
+            <div class="dish-info">
+              <h2>Maíz tostado</h2>
+              <p>Toasted corn kernels, a crunchy traditional Ecuadorian snack.</p>
+              <span class="price">$2.00</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" data-category="Drinks">
+        <h2>Drinks</h2>
+        <div class="menu-container">
+          <div class="dish-card">
+            <img src="/images/download (11).jfif" alt="Tropical" />
+            <div class="dish-info">
+              <h2>Tropical</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$2.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/image-asset.jpeg" alt="Tropical" />
+            <div class="dish-info">
+              <h2>Batidos</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$4.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" data-category="Desserts">
+        <h2>Desserts</h2>
+        <div class="menu-container">
+          <div class="dish-card">
+            <img src="/images/download (13).jfif" alt="Helados" />
+            <div class="dish-info">
+              <h2>Helados</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$3.00</span>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="/images/Honduran-desserts-flan.jpg" alt="Helados" />
+            <div class="dish-info">
+              <h2>Flan</h2>
+              <p>Cheesy potato patties served with chorizo and peanut sauce.</p>
+              <span class="price">$3.00</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>📞 Contact Us</h2>
+        <p>Ready to place an order or have questions? Give us a call or reach out on Facebook!</p>
+        <p><strong>📱 Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p><strong>🔗 Facebook:</strong> <a href="https://facebook.com/yourrestaurant" target="_blank">Visit Our Page</a></p>
+      </section>
+      
+    
+
+
+</main>
+
+    <script>
+      const buttons = document.querySelectorAll(".filter-nav button");
+      const sections = document.querySelectorAll(".menu-section");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const category = button.getAttribute("data-category");
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          sections.forEach((section) => {
+            if (
+              category === "all" ||
+              section.getAttribute("data-category") === category
+            ) {
+              section.style.display = "";
+            } else {
+              section.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
