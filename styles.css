@@ -163,22 +163,39 @@ header h1 {
 
 .dish-card img {
   width: 100%;
-  height: 200px;
+  height: auto; /* let height adjust naturally */
+  max-height: 180px; /* cap height if needed */
   object-fit: cover;
+  object-position: center;
 }
 
-.dish-info {
-  padding: 1rem;
+.dish-card img:empty {
+  height: 200px;
+  background-color: #fef6dd;
+  display: block;
 }
 
-.dish-info h2 {
-  color: #003893;
-  margin-bottom: 0.5rem;
-}
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
 
-.dish-info p {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+  .dish-info h2 {
+    font-size: 0.95rem;
+  }
+
+  .dish-info p {
+    font-size: 0.8rem;
+  }
+
+  .dish-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 1rem;
+  }
 }
 
 .price {
@@ -385,4 +402,35 @@ html {
 
 .contact-section p {
   margin-bottom: 0.75rem;
+}
+
+.dish-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.dish-info .price {
+  margin-top: auto;
+}
+
+@media (min-width: 769px) {
+  .menu-section[data-category="Desserts"] .menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .menu-section[data-category="Desserts"] .dish-card {
+    flex: 0 1 320px;
+    max-width: 320px;
+  }
 }
